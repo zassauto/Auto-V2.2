@@ -232,7 +232,7 @@
 
 
                     <div class="row mx-5 my-3 d-flex justify-content-center">
-                        <div class="row col col-md-12" id="form">
+                        <div class="row col col-md-9" id="form">
                     
                             <!-- Titre de Formulaire-------------------------------- -->
                             <div style="text-align: center;margin-top: 13%">
@@ -1279,11 +1279,9 @@
     <script src="next/static/2bJhCpkuoWk1qRKHkLmxq/_ssgManifest.js" async=""></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script>
         $('input[type="radio"]').change(function (e) {
@@ -1297,8 +1295,8 @@
                 html += `
                     <div class='mb-3 col-md-5 Sous-questions' style="" name="isEuSinistres36DerniersMois">
                         <label for="natureSinistre36DerniersMois" class="form-label">Nature du sinistre <span class="requis">*</span></label>
-                        <select class="form-select" id="natureSinistre36DerniersMois">
-                            <option value="Veuillez sélectionner">Veuillez sélectionner</option>
+                        <select class="form-select" name="natureSinistre36DerniersMois">
+                            <option value="">Veuillez sélectionner</option>
                             <option value="Materiel non responsable">Materiel non responsable</option>
                             <option value="Materiel responsable">Materiel responsable</option>
                             <option value="Materiel responsable 50">Materiel partiellement responsable </option>
@@ -1316,7 +1314,7 @@
 
                     <div class='mb-3 col-md-5' style="" name="isEuSinistres36DerniersMois">
                         <label for="dateSinistre36DerniersMois" class="form-label">Date du sinistre <span class="requis">*</span></label>
-                        <input class="form-control" type="date" id="dateSinistre36DerniersMois">
+                        <input class="form-control" type="date" name="dateSinistre36DerniersMois">
                     </div>
                 `
             $('#sinistres').html(html)
